@@ -1,4 +1,5 @@
 export default {
+    base:'mzyao',
     title: "小姚随手记",
     description: "专注后端、安全与实战经验",
     themeConfig: {
