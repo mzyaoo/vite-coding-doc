@@ -6,7 +6,7 @@ hero:
   text: 在代码与现实之间，用文字留下脚印
   tagline: 记录技术、生活与思考
   image:
-    src: /public/img/img.png
+    src: /img/img.png
     alt: Avatar
   actions:
     - theme: brand
