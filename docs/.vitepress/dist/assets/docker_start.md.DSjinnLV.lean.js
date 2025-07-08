@@ -1,0 +1,1 @@
+import{_ as a,c as e,o as i,ae as t}from"./chunks/framework.BjJUrjqq.js";const k=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"docker/start.md","filePath":"docker/start.md"}'),l={name:"docker/start.md"};function n(h,s,r,o,d,c){return i(),e("div",null,s[0]||(s[0]=[t("",9)]))}const u=a(l,[["render",n]]);export{k as __pageData,u as default};

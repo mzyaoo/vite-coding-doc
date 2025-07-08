@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as r,ae as o}from"./chunks/framework.BjJUrjqq.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"other/mac.md","filePath":"other/mac.md"}'),n={name:"other/mac.md"};function s(c,a,l,p,h,_){return r(),e("div",null,a[0]||(a[0]=[o("",5)]))}const u=t(n,[["render",s]]);export{m as __pageData,u as default};
