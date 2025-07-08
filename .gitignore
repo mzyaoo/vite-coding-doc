@@ -1,0 +1,5 @@
+### Vuejs template
+# Recommended template: Node.gitignore
+
+node_modules/
+.idea/

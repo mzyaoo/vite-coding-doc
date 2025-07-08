@@ -1,0 +1,23 @@
+/* docs/.vitepress/theme/style.css */
+img {
+    display: block;
+    margin: 2rem auto;
+    max-width: 90%;
+    border-radius: 8px;
+    /*box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);*/
+    transition: all 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.01);
+}
+
+/* 提高 medium-zoom 遮罩和图片的层级 */
+.medium-zoom-overlay {
+    z-index: 1000 !important;
+}
+
+.medium-zoom-image--opened {
+    z-index: 1001 !important;
+    position: relative;
+}
