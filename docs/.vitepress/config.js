@@ -2,6 +2,7 @@ export default {
     base:'mzyao',
     title: "小姚随手记",
     description: "专注后端、安全与实战经验",
+    ignoreDeadLinks: true,
     themeConfig: {
         outline: 'deep', // 支持多级标题
         outlineTitle: '本文目录',
@@ -53,7 +54,7 @@ export default {
                 text: '其他',
                 collapsible: true,
                 items: [
-                    {text: 'Mac', link: '/other/mac'},
+                    {text: 'Mac相关', link: '/other/mac'},
                     {text: 'MacDocker开发环境', link: '/other/m1-docker'},
                 ]
             }
