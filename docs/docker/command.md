@@ -74,3 +74,17 @@ docker load -i <镜像tar包路径>
 docker network create <name>
 ```
 
+### 通过docker-compose.yml获取镜像并启动
+```shell
+# 启动并构建服务
+docker-compose up -d
+
+# 停止并清理容器、网络
+docker-compose down
+
+# 查看容器日志
+docker-compose logs
+
+# 重启指定服务
+docker-compose restart redis
+```

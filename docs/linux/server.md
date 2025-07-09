@@ -254,6 +254,7 @@ nginx -c /opt/conf/nginx.conf
 [官方文档地址](https://github.com/nvm-sh/nvm)
 ##### 2、通过命令行下载安装NodeJs
 [Node.js-16.15.1 点击下载](https://registry.npmmirror.com/-/binary/node/v16.15.1/node-v16.15.1-linux-x64.tar.gz)
+
 **下载Node.js 安装包**
 ```shell
 wget https://registry.npmmirror.com/-/binary/node/v16.15.1/node-v16.15.1-linux-x64.tar.gz
