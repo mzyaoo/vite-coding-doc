@@ -9,7 +9,7 @@ export default {
         nav: [
             {text: "首页", link: "/"},
             {text: "关于", link: "/about"},
-            {text: "GitHub", link: "https://github.com/yourname"},
+            {text: "GitHub", link: "https://github.com/mzyaoo"},
         ],
         sidebar: [
             {

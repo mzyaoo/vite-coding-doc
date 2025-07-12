@@ -14,7 +14,7 @@ hero:
       link: /quickstart
     - theme: alt
       text: GitHub
-      link: https://github.com/yourname
+      link: https://github.com/mzyaoo
 ---
 
 ## ✨ 简介
