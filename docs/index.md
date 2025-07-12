@@ -3,7 +3,7 @@ layout: home
 title: 我的博客
 hero:
   name: JavaCoding
-  text: 在代码与现实之间，用文字留下脚印
+  text: 以代码构建世界，用文字记录思考
   tagline: 记录技术、生活与思考
   image:
     src: /img/img.png
@@ -45,3 +45,18 @@ hero:
 - **其他**
     - [Mac相关](./other/mac.md)
     - [MacDocker开发环境](./other/m1-docker.md)
+
+
+::: code-group
+```sh [pnpm]
+pnpm -v
+```
+
+```sh [yarn]
+yarn -v
+```
+
+```sh [bun]
+bun -v
+```
+:::
