@@ -49,7 +49,7 @@ docker buildx build --platform linux/amd64 -t  {service_name}:{tag} .
 
 ### 查看 Docker 镜像/容器详细信息
 ```shell
-docker inspect {镜像 id} / {容器 id}
+docker inspect <镜像id> / <容器id>
 ```
 
 ### 清除构建缓存（buildx 构建用）
@@ -60,10 +60,10 @@ docker builder prune --all
 ### 监听 docker 容器日志
 ```shell
 # 监听容器日志
-docker logs -f 容器名/容器ID
+docker logs -f <容器名/容器ID>
 
 # 指定最近行数
-docker logs -f --tail 100 容器名/容器ID
+docker logs -f --tail 100 <容器名/容器ID>
 ```
 
 ### 修改容器名称
