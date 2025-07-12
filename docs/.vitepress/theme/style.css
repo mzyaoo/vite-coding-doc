@@ -1,14 +1,14 @@
 /* docs/.vitepress/theme/style.css */
-img {
+.doc-img {
     display: block;
     margin: 2rem auto;
     max-width: 90%;
     border-radius: 8px;
-    /*box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);*/
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
 }
 
-img:hover {
+.doc-img:hover {
     transform: scale(1.01);
 }
 

@@ -1,5 +1,6 @@
 ### 搜索镜像
-```dtd
+```shell
+# 也可通过官方地址 https://hub.docker.com/ 来进行搜索镜像
 docker search 镜像名称
 ```
 
@@ -24,6 +25,21 @@ docker rmi 镜像ID
 
 # 删除容器
 docker rm 容器ID/容器名称
+```
+
+### 创建并启动一个新的容器
+```shell
+docker run -d \ # 后台运行容器
+  --name 设置容器名 \
+  --restart 容器异常退出后自动重启 \
+  --network 自定义docker网络名 \
+  --network-alias 网络别名 \
+  -p 映射端口 \
+  -e 环境变量 \
+  -v 宿主机文件路径:容器内部路径 \
+  -w /app \    
+  IMAGE \
+  COMMAND 
 ```
 
 ### 打包 Docker 镜像并指定系统架构
@@ -73,6 +89,9 @@ docker load -i <镜像tar包路径>
 ```shell
 docker network create <name>
 ```
+> [!Warning]
+> 1、在`Linux`服务器中，如需容器直接使用宿主机的网络栈（例如用于高性能或绕过端口映射），可以使用`--network host`模式。\
+> 2、Mac中使用docker部署服务，官方不支持使用`--network host`，则必须要使用自定义网络的形式来实现。其他容器在请求时，则使用`容器名/容器ID/容器网络别名：端口`，来进行请求.
 
 ### 通过docker-compose.yml获取镜像并启动
 ```shell

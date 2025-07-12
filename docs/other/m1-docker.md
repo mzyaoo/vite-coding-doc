@@ -204,4 +204,4 @@ docker run --name Nacos-2.2.0 \
 > 对于暴露的端口描述，也可查看官方解释：https://nacos.io/en/blog/faq/nacos-user-question-history15220/
 
 成功示例图：
-<img src="../public/img/mac/nacos.png" width="60%" height="60%" alt="最终示例图">
+<img class="doc-img" src="../public/img/mac/nacos.png" width="60%" height="60%" alt="最终示例图" />

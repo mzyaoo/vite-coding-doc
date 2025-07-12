@@ -12,17 +12,17 @@ import VersionTabs from '../.vitepress/components/VersionTabs.vue'
 { label: '2023.0.x', slot: 'v2023' }
 ]">
 <template #v2021>
-<img src="../public/img/springcloud/2021.x.1.png" alt="2021图1" />
-<img src="../public/img/springcloud/2021.x.2.png" alt="2021图2" />
+<img class="doc-img" src="../public/img/springcloud/2021.x.1.png" alt="2021图1" />
+<img class="doc-img" src="../public/img/springcloud/2021.x.2.png" alt="2021图2" />
 </template>
 
 <template #v2022>
-<img src="../public/img/springcloud/2022.x.1.png" alt="2022图1" />
-<img src="../public/img/springcloud/2022.x.2.png" alt="2022图2" />
+<img class="doc-img" src="../public/img/springcloud/2022.x.1.png" alt="2022图1" />
+<img class="doc-img" src="../public/img/springcloud/2022.x.2.png" alt="2022图2" />
 </template>
 
 <template #v2023>
-<img src="../public/img/springcloud/2023.x.png" alt="2023图" />
+<img class="doc-img" src="../public/img/springcloud/2023.x.png" alt="2023图" />
 </template>
 </VersionTabs>
 

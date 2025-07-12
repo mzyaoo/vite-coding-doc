@@ -1,6 +1,6 @@
 ### 代理导致的网络问题
 
-<img src="../public/img/problem/git-01.png" width="60%" height="60%" alt="最终示例图">
+<img class="doc-img" src="../public/img/problem/git-01.png" width="60%" height="60%" alt="最终示例图" />
 
 以上为错误图例，初步定位为网络代理导致的问题，此问题出现在 Macos 系统上。<br/>
 解决方式如下：<br/>

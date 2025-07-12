@@ -8,7 +8,7 @@
 tar -zxvf jdk-8u333-linux-x64.tar.gz -C /opt
 ```
 ***如图***
-<img src="../public/img/centos/java_1.png" width="60%" height="60%" alt="最终示例图">
+<img class="doc-img" alt="最终示例图" height="60%" src="../public/img/centos/java_1.png" width="60%"/>
 
 **配置java全局环境变量**
 ```shell
@@ -30,7 +30,7 @@ source /etc/profile
 java -version
 ```
 ***如图***
-<img src="../public/img/centos/java_2.png" alt="最终示例图">
+<img class="doc-img" alt="最终示例图" src="../public/img/centos/java_2.png"/>
 
 ### MySql-8.0
 **创建并进入mysql文件夹**
@@ -59,7 +59,7 @@ yum install -y mysql-community-server
 > 可能出现软件包不适用错误，错误图例如下。 <br/>
 > 出现错误请使用此命令：`yum install mysql-server --nogpgcheck`
 
-<img src="../public/img/centos/mysql-error-01.png" width="60%" height="60%" alt="最终示例图">
+<img class="doc-img" src="../public/img/centos/mysql-error-01.png" width="60%" height="60%" alt="最终示例图" />
 
 **以上没有报错的情况下，表示mysql安装完成，mysql相关命令**
 ```shell
@@ -128,7 +128,7 @@ cd /opt/maven
 
 mkdir MyRepository
 ```
-<img src="../public/img/centos/maven_1.png" alt="最终示例图">
+<img class="doc-img" src="../public/img/centos/maven_1.png" alt="最终示例图" />
 
 **配置Maven全局环境变量**
 ```shell
@@ -148,7 +148,7 @@ source /etc/profile
 mvn -version
 ```
 ***如图***
-<img src="../public/img/centos/maven_2.png" alt="最终示例图">
+<img class="doc-img" src="../public/img/centos/maven_2.png" alt="最终示例图" />
 
 **setting.xml配置**
 ```xml

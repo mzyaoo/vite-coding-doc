@@ -96,7 +96,7 @@ chmod 777 /mydata/elasticsearch/data/
 
 **安装中文分词器IKAnalyzer，注意下载与Elasticsearch对应的版本[点击下载](https://github.com/medcl/elasticsearch-analysis-ik/releases),下载完成后解压到Elasticsearch的/mydata/elasticsearch/plugins目录下；**
 
-<img src="../public/img/docker/es-ik.png" width="60%" height="60%" alt="最终示例图">
+<img class="doc-img" src="../public/img/docker/es-ik.png" width="60%" height="60%" alt="最终示例图" />
 
 **重新启动服务：**
 
@@ -159,7 +159,7 @@ firewall-cmd --reload
 
 **访问地址进行测试：http://ip:5601**
 
-<img src="../public/img/docker/elastic.png" width="60%" height="60%" alt="最终示例图">
+<img class="doc-img" src="../public/img/docker/elastic.png" width="60%" height="60%" alt="最终示例图" />
 
 ## RabbitMQ安装
 
@@ -187,7 +187,7 @@ firewall-cmd --reload
 **访问地址查看是否安装成功：http://ip:15672**<br/>
 **默认的用户名和密码为：`guest`**
 
-<img src="../public/img/docker/rabbitmq.png" width="60%" height="60%" alt="最终示例图">
+<img class="doc-img" src="../public/img/docker/rabbitmq.png" width="60%" height="60%" alt="最终示例图" />
 
 ## Redis安装
 
@@ -216,4 +216,4 @@ docker run -p 6379:6379 --name redis \
 docker exec -it redis redis-cli
 ```
 
-<img src="../public/img/docker/redis.png" width="60%" height="60%" alt="最终示例图">
+<img class="doc-img" src="../public/img/docker/redis.png" width="60%" height="60%" alt="最终示例图" />
