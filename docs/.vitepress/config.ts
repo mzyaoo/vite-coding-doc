@@ -20,7 +20,7 @@ export default defineConfig({
         }
     },
     themeConfig: {
-        logo: '/vite-coding-doc/favicon.ico', // 左侧图标
+        logo: '/favicon.ico', // 左侧图标
         siteTitle: '小姚随手记', // 标题文字
         outline: 'deep', // 支持多级标题
         outlineTitle: '本文目录',
