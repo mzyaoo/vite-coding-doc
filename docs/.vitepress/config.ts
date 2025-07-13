@@ -26,6 +26,12 @@ export default defineConfig({
         outlineTitle: '本文目录',
         nav: [
             {text: "首页", link: "/"},
+            {
+                text: "快速导航",
+                items: [
+                    {text: "服务器相关", link: "/docker/start"},
+                ]
+            },
             {text: "关于", link: "/about"},
             {text: "GitHub", link: "https://github.com/mzyaoo"},
         ],
