@@ -1,10 +1,11 @@
 import {defineConfig} from "vitepress";
 
 export default defineConfig({
-    base: '/vite-coding-doc/',
+    base: '/',
     title: "小姚随手记",
     description: "专注后端、安全与实战经验",
     ignoreDeadLinks: true,
+    head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
     markdown: {
         //行号显示
         lineNumbers: true, //false关闭
@@ -18,6 +19,8 @@ export default defineConfig({
         }
     },
     themeConfig: {
+        logo: '/favicon.ico', // 左侧图标
+        siteTitle: '小姚随手记', // 标题文字
         outline: 'deep', // 支持多级标题
         outlineTitle: '本文目录',
         nav: [
