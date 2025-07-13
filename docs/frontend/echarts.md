@@ -15,6 +15,7 @@
 1. [echarts-map-demo](https://github.com/TangSY/echarts-map-demo)
 
 *示例代码：*
+::: details 点我查看
 ```javascript
 // 此处案例使用jquery请求json文件获取geojson数据
 // 加载geojson.json文件
@@ -34,3 +35,4 @@ $.get('本地geojson.json文件', function (geoJson) {
     // 在这里处理错误
 });
 ```
+:::
