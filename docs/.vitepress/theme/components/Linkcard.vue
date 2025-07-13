@@ -19,7 +19,7 @@ const props = withDefaults(defineProps<Props>(), {
   <div class="linkcard">
     <a :href="props.url" target="_blank">
       <p class="description">{{ props.title }}<br><span>{{ props.description }}</span></p>
-      <div class="logo">
+      <div class="logo" v-if="props.logo">
         <img alt="logo" width="70px" height="70px" :src="props.logo" />
       </div>
     </a>
