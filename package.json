@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "medium-zoom": "^1.1.0",
+    "vitepress-plugin-comment-with-giscus": "^1.1.15",
     "vue": "^3.5.17"
   }
 }

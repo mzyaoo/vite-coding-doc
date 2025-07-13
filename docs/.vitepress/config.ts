@@ -6,7 +6,7 @@ export default defineConfig({
     title: "小姚随手记",
     description: "专注后端、安全与实战经验",
     ignoreDeadLinks: true,
-    head: [['link', { rel: 'icon', href: '/vite-coding-doc/favicon.ico' }]],
+    head: [['link', {rel: 'icon', href: '/vite-coding-doc/favicon.ico'}]],
     markdown: {
         //行号显示
         lineNumbers: true, //false关闭
@@ -33,7 +33,6 @@ export default defineConfig({
                 ]
             },
             {text: "关于", link: "/about"},
-            {text: "GitHub", link: "https://github.com/mzyaoo"},
         ],
         sidebar: [
             {
@@ -43,8 +42,8 @@ export default defineConfig({
                 ]
             },
             {
-                text: '服务器相关',
-                collapsed:"false",
+                text: "服务器相关",
+                collapsed: true,
                 items: [
                     {text: 'Docker安装', link: '/docker/start'},
                     {text: 'Docker常用命令', link: '/docker/command'},
@@ -54,14 +53,14 @@ export default defineConfig({
             },
             {
                 text: '后端',
-                collapsed:"false",
+                collapsed: true,
                 items: [
                     {text: 'SpringCloud', link: '/backend/springcloud'},
                 ]
             },
             {
                 text: '前端',
-                collapsed:"false",
+                collapsed: true,
                 items: [
                     {text: 'Vue', link: '/frontend/vue'},
                     {text: 'Echarts', link: '/frontend/echarts'},
@@ -69,14 +68,14 @@ export default defineConfig({
             },
             {
                 text: '问题总结',
-                collapsed:"false",
+                collapsed: true,
                 items: [
                     {text: 'Git', link: '/issue/git'},
                 ]
             },
             {
                 text: '其他',
-                collapsed:"false",
+                collapsed: true,
                 items: [
                     {text: 'Mac相关', link: '/other/mac'},
                     {text: 'MacDocker开发环境', link: '/other/m1-docker'},
