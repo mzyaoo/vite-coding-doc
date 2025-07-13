@@ -11,6 +11,8 @@
 /*代码组*/
 @import './vp-code-group.css';
 /*自定义css*/
-@import './custom.css';
+@import './var.css';
 /*暗黑样式*/
 @import './dark.css';
+/*自定义样式*/
+@import './custom.css';

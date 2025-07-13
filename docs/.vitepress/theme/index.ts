@@ -48,27 +48,17 @@ export default {
         // Get frontmatter and route
         const {frontmatter} = useData();
         const route = useRoute();
-
         const initZoom = () => {
-            mediumZoom('.main img', {
-                background: 'rgba(0, 0, 0, 0.8)'
-            })
-        }
-
-        onMounted(async () => {
-            watch(
-                () => route.path,
-                () => {
-                    // 等待页面 DOM 渲染完成再执行 zoom
-                    nextTick(() => {
-                        initZoom()
-                    }).then(r => {
-                        console.info(r)
-                    })
-                },
-                {immediate: true}
-            )
-        })
+            // mediumZoom('[data-zoomable]', { background: 'var(--vp-c-bg)' }); // 默认
+            mediumZoom('.main img', {background: 'var(--vp-c-bg)'}); // 不显式添加{data-zoomable}的情况下为所有图像启用此功能
+        };
+        onMounted(() => {
+            initZoom();
+        });
+        watch(
+            () => route.path,
+            () => nextTick(() => initZoom())
+        );
         // giscus配置
         giscusTalk({
                 repo: 'mzyaoo/vite-coding-doc', //仓库
