@@ -24,7 +24,7 @@ export default {
     },
     head: [
         // 设置 favicon
-        ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }]
+        ['link', { rel: 'icon', type: 'image/svg+xml', href: '/vite-coding-doc/favicon.svg' }]
     ],
     enhanceApp({app, router}) {
         app.component('ArticleMetadata', ArticleMetadata)
