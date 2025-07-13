@@ -6,7 +6,10 @@ export default defineConfig({
     title: "小姚随手记",
     description: "专注后端、安全与实战经验",
     ignoreDeadLinks: true,
-    head: [['link', {rel: 'icon', href: '/vite-coding-doc/favicon.ico'}]],
+    head: [
+        ['link', {rel: 'icon', href: '/vite-coding-doc/favicon.ico'}],
+        ['meta', { name: 'algolia-site-verification', content: '1EF515598795DEB3' }],
+    ],
     markdown: {
         //行号显示
         lineNumbers: true, //false关闭
@@ -34,6 +37,11 @@ export default defineConfig({
             },
             {text: "关于", link: "/about"},
         ],
+        //自定义上下页名
+        docFooter: {
+            prev: '上一页',
+            next: '下一页',
+        },
         sidebar: [
             {
                 text: "",
@@ -82,5 +90,6 @@ export default defineConfig({
                 ]
             }
         ]
-    }
+    },
+
 })
