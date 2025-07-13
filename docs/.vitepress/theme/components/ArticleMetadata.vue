@@ -60,6 +60,7 @@ onMounted(() => {
               fill="#E0E0E0" opacity=".619" p-id="6127"></path>
       </svg>
       字数: {{ wordCount }} 字
+      &nbsp;&nbsp;&nbsp;&nbsp;
       <svg t="1724572797268" class="icon" viewBox="0 0 1060 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
            p-id="15031" width="16" height="16">
         <path
