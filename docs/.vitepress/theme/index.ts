@@ -7,20 +7,28 @@ import './style/index.css'
 
 let homePageStyle: HTMLStyleElement | undefined
 
+/*组建*/
 import ArticleMetadata from "./components/ArticleMetadata.vue"
 import Backtotop from "./components/Backtotop.vue";
+import MouseFollower from "./components/MouseFollower.vue"
+import DocLayout from "./components/layout/DocLayout.vue";
 
 
 export default {
     ...DefaultTheme,
     Layout() {
-        return h(DefaultTheme.Layout, null, {
+        return h(DocLayout, null, {
             // 指定组件使用doc-footer-before插槽
             'doc-footer-before': () => h(Backtotop),
         })
     },
+    head: [
+        // 设置 favicon
+        ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }]
+    ],
     enhanceApp({app, router}) {
         app.component('ArticleMetadata', ArticleMetadata)
+        app.component('MouseFollower', MouseFollower)
         // 彩虹背景动画样式
         if (typeof window !== 'undefined') {
             watch(

@@ -34,6 +34,7 @@ export default defineConfig({
             },
             {
                 text: '服务器相关',
+                collapsed:"false",
                 items: [
                     {text: 'Docker安装', link: '/docker/start'},
                     {text: 'Docker常用命令', link: '/docker/command'},
@@ -43,12 +44,14 @@ export default defineConfig({
             },
             {
                 text: '后端',
+                collapsed:"false",
                 items: [
                     {text: 'SpringCloud', link: '/backend/springcloud'},
                 ]
             },
             {
                 text: '前端',
+                collapsed:"false",
                 items: [
                     {text: 'Vue', link: '/frontend/vue'},
                     {text: 'Echarts', link: '/frontend/echarts'},
@@ -56,12 +59,14 @@ export default defineConfig({
             },
             {
                 text: '问题总结',
+                collapsed:"false",
                 items: [
                     {text: 'Git', link: '/issue/git'},
                 ]
             },
             {
                 text: '其他',
+                collapsed:"false",
                 items: [
                     {text: 'Mac相关', link: '/other/mac'},
                     {text: 'MacDocker开发环境', link: '/other/m1-docker'},
