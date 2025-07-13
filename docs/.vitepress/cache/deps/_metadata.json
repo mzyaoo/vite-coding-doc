@@ -1,37 +1,46 @@
 {
-  "hash": "1abaed98",
+  "hash": "75b73d4c",
   "configHash": "4957a1da",
-  "lockfileHash": "87e8577f",
-  "browserHash": "a2d701c0",
+  "lockfileHash": "152cb38e",
+  "browserHash": "11e54eb6",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "850c8ca2",
+      "fileHash": "369f74ca",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "1f0e51be",
+      "fileHash": "e8eb7eb1",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "2897ed3a",
+      "fileHash": "473d813e",
       "needsInterop": false
     },
     "medium-zoom": {
       "src": "../../../../node_modules/medium-zoom/dist/medium-zoom.esm.js",
       "file": "medium-zoom.js",
-      "fileHash": "d6931db4",
+      "fileHash": "340fd06a",
+      "needsInterop": false
+    },
+    "vitepress-plugin-comment-with-giscus": {
+      "src": "../../../../node_modules/vitepress-plugin-comment-with-giscus/lib/giscus.js",
+      "file": "vitepress-plugin-comment-with-giscus.js",
+      "fileHash": "49315589",
       "needsInterop": false
     }
   },
   "chunks": {
     "chunk-DDXJJ377": {
       "file": "chunk-DDXJJ377.js"
+    },
+    "giscus-aTimukGI-KUYRML7I": {
+      "file": "giscus-aTimukGI-KUYRML7I.js"
     }
   }
 }
