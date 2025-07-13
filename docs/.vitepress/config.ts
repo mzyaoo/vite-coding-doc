@@ -86,6 +86,7 @@ export default defineConfig({
                 collapsed: true,
                 items: [
                     {text: 'Mac相关', link: '/other/mac'},
+                    {text: 'Mac应用分享', link: '/other/mac-application'},
                     {text: 'MacDocker开发环境', link: '/other/m1-docker'},
                 ]
             }
