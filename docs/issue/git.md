@@ -1,3 +1,16 @@
+### Git命令
+
+```shell
+# 同步远程分支
+git fetch --prune
+
+# 撤销到合并前
+git reset --hard ORIG_HEAD
+
+# 丢弃所有文件的修改
+git restore .
+```
+
 ### 代理导致的网络问题
 
 <img class="doc-img" src="../public/img/problem/git-01.png" width="60%" height="60%" alt="最终示例图" />

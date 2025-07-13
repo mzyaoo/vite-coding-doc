@@ -7,7 +7,6 @@ import './style/index.css'
 import giscusTalk from 'vitepress-plugin-comment-with-giscus';
 import {useData, useRoute} from 'vitepress';
 
-
 let homePageStyle: HTMLStyleElement | undefined
 
 /*组建*/
@@ -35,7 +34,7 @@ export default {
         app.component('ArticleMetadata', ArticleMetadata)
         app.component('MouseFollower', MouseFollower)
         app.component('HomePage', HomePage)
-        app.component('Linkcard' , Linkcard)
+        app.component('Linkcard', Linkcard)
         // 彩虹背景动画样式
         if (typeof window !== 'undefined') {
             watch(
@@ -61,6 +60,7 @@ export default {
             () => route.path,
             () => nextTick(() => initZoom())
         );
+
         // giscus配置
         giscusTalk({
                 repo: 'mzyaoo/vite-coding-doc', //仓库
