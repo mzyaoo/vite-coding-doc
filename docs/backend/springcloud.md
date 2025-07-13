@@ -1,5 +1,5 @@
 <script setup>
-import VersionTabs from '../.vitepress/components/VersionTabs.vue'
+import VersionTabs from '../.vitepress/theme/components/VersionTabs.vue'
 </script>
 
 ### 版本关系
