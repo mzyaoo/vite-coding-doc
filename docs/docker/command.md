@@ -53,8 +53,12 @@ docker buildx build --platform linux/amd64 -t  {service_name}:{tag} .
 docker inspect <镜像id> / <容器id>
 ```
 
-### 清除构建缓存（buildx 构建用）
+### 清除构建缓存
 ```shell
+# 清理 buildx 构建缓存
+docker buildx prune --all
+
+# 清理 Docker 自身 build 系统的缓存
 docker builder prune --all
 ```
 

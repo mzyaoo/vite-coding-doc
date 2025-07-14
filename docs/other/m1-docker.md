@@ -205,3 +205,139 @@ docker run --name Nacos-2.2.0 \
 
 成功示例图：
 <img class="doc-img" src="../public/img/mac/nacos.png" width="60%" height="60%" alt="最终示例图" />
+
+### DockerCompose安装服务
+
+#### mysql、redis、otel、minio、milvus
+::: details 点我查看`docker-compose.yml`信息
+```shell
+version: '3.5'
+
+services:
+  etcd:
+    container_name: milvus-etcd
+    image: quay.io/coreos/etcd:v3.5.18
+    environment:
+      - ETCD_AUTO_COMPACTION_MODE=revision
+      - ETCD_AUTO_COMPACTION_RETENTION=1000
+      - ETCD_QUOTA_BACKEND_BYTES=4294967296
+      - ETCD_SNAPSHOT_COUNT=50000
+    volumes:
+      - ${Home}/Docker/milvus/volumes/etcd:/etcd
+    command: etcd -advertise-client-urls=http://etcd:2379 -listen-client-urls http://0.0.0.0:2379 --data-dir /etcd
+    healthcheck:
+      test: ["CMD", "etcdctl", "endpoint", "health"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+    networks:
+      - docker-net
+
+  minio:
+    container_name: milvus-minio
+    image: minio/minio:RELEASE.2024-05-28T17-19-04Z
+    environment:
+      MINIO_ACCESS_KEY: minioadmin
+      MINIO_SECRET_KEY: minioadmin
+    ports:
+      - "9001:9001"
+      - "9000:9000"
+    volumes:
+      - ${Home}/Docker/milvus/volumes/minio:/minio_data
+    command: minio server /minio_data --console-address ":9001"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+    networks:
+      - docker-net
+
+  standalone:
+    container_name: milvus-standalone
+    image: milvusdb/milvus:v2.5.14
+    command: ["milvus", "run", "standalone"]
+    security_opt:
+      - seccomp:unconfined
+    environment:
+      MINIO_REGION: us-east-1
+      ETCD_ENDPOINTS: etcd:2379
+      MINIO_ADDRESS: minio:9000
+      MILVUS_ENABLE_AUTH: true
+      MILVUS_USER: admin
+      MILVUS_PASSWORD: admin123
+    volumes:
+      - ${Home}/Docker/milvus/volumes/milvus:/var/lib/milvus
+      - ${Home}/Docker/milvus/configs/milvus.yaml:/milvus/configs/milvus.yaml
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9091/healthz"]
+      interval: 30s
+      start_period: 90s
+      timeout: 20s
+      retries: 3
+    ports:
+      - "19530:19530"
+      - "9091:9091"
+    depends_on:
+      - "etcd"
+      - "minio"
+    networks:
+      - docker-net
+  
+  mysql:
+    image: mysql:8.0.42
+    container_name: mysql8
+    restart: "no"
+    ports:
+      - "3306:3306"
+    networks:
+      - docker-net
+    environment:
+      MYSQL_ROOT_PASSWORD: 84wl5rce
+    volumes:
+      - ${HOME}/Docker/mysql/my.cnf:/etc/mysql/my.cnf
+      - mysql-data:/var/lib/mysql
+    command: --default-authentication-plugin=mysql_native_password
+
+  otel:
+    image: otel/opentelemetry-collector-contrib:latest
+    container_name: otel
+    ports:
+      - "4317:4317"
+    volumes:
+      - ${HOME}/Docker/otel/otel-config.yml:/etc/otelcol-contrib/config.yaml
+    networks:
+      - docker-net
+
+  redis:
+    image: redis:8.0
+    container_name: redis8
+    restart: always
+    ports:
+      - "6379:6379"
+    networks:
+      - docker-net
+    volumes:
+      - ${HOME}/Docker/redis/data:/data
+      - ${HOME}/Docker/redis/conf/redis.conf:/usr/local/etc/redis/redis.conf
+    command: redis-server /usr/local/etc/redis/redis.conf
+
+volumes:
+  mysql-data:
+
+networks:
+  default:
+    name: docker-net
+  docker-net:
+    external: true
+```
+:::
+
+> `milvus`相关
+
+<Linkcard url="https://github.com/milvus-io/milvus" 
+          title="官方仓库" 
+          description="https://github.com/milvus-io/milvus"
+/>
+
+**`milvus` 相关的 `docker-compose.yml`、`milvus.yaml`文件信息请参考官方仓库，本文使用的版本为`v2.5.14`**
