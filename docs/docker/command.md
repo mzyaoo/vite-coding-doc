@@ -76,7 +76,7 @@ docker logs -f --tail 100 <容器名/容器ID>
 docker rename 原名称 新名称
 ```
 
-### Docker 修改镜像名称
+### Docker 创建镜像别名
 ```shell
 docker tag 原镜像名[:原标签] 新镜像名[:新标签]
 ```

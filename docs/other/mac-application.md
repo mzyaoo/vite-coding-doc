@@ -60,3 +60,6 @@ interact
 <p>
 <img src="../public/img/mac/iTerm2.png" width="40%" height="30%" alt="最终示例图">
 </p>
+
+### ClashX
+<Linkcard url="https://bucd.me/#/register?code=49v7nXMT" title="Bucd" description="推荐梯子"/>

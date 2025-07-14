@@ -97,7 +97,11 @@ bin/elasticsearch-plugin install file:分词器压缩包路径
 镜像系统架构：``linux/amd64`` ``linux/arm64/v8``
 
 ```shell
+# 拉取镜像
 docker pull kangaroo1122-docker.pkg.coding.net/project/public/oracle:19c-ee
+
+# 创建本地镜像的别名
+docker tag kangaroo1122-docker.pkg.coding.net/project/public/oracle:19c-ee oracle/oracle:19.19.0-ee
 ```
 
 运行容器，命令如下：
@@ -115,7 +119,7 @@ docker run -d \
 -e INIT_PGA_SIZE=1000 \
 -v /vm-data/oracle-19c/oradata:/opt/oracle/oradata \
 --name oracle19c \
-oracle/database:19.19.0-ee
+oracle/oracle:19.19.0-ee
 ```
 
 oracle创建用户
