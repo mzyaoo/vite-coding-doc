@@ -345,3 +345,22 @@ networks:
 />
 
 **`milvus` 相关的 `docker-compose.yml`、`milvus.yaml`文件信息请参考官方仓库，本文使用的版本为`v2.5.14`**
+
+> [!TIP]
+> 安装完成后，通过访问 `http://localhost:9091`，查看是否安装成功 。
+
+milvus客户端工具更推荐使用`zilliz/attu`，docker安装方式如下
+
+```shell
+# milvus客户端工具
+docker pull zilliz/attu:latest
+
+docker run -d -p 3000:3000 \
+--name attu \
+--network codegeex-net \
+-e MILVUS_URL=localhost:19530 \
+zilliz/attu:latest
+```
+
+> [!TIP]
+> 安装完成后，通过访问 `http://localhost:3000`，查看是否安装成功 。
