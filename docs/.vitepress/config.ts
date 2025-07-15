@@ -112,6 +112,14 @@ export default defineConfig({
                 ]
             },
             {
+                text: "大模型",
+                collapsed: true,
+                items: [
+                    {text: 'Ollama', link: '/model/ollama'},
+                    {text: '相关服务', link: '/model/server'},
+                ]
+            },
+            {
                 text: '后端',
                 collapsed: true,
                 items: [

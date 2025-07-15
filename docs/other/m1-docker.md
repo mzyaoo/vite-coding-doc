@@ -213,6 +213,10 @@ docker run --name Nacos-2.2.0 \
 ### DockerCompose安装服务
 
 #### mysql、redis、otel、minio、milvus
+
+> [!TIP]
+> 以下方式MacOS成功部署，使用自定义Docker网络的形式，其他容器成功连接！
+
 ::: details 点我查看`docker-compose.yml`信息
 ```shell
 version: '3.5'
