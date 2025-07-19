@@ -1,6 +1,6 @@
 <template>
   <div>
-    <a @click="open = true" style="cursor: pointer;">{{ aInfo }}</a>
+    <a @click="open = true" style="cursor: pointer;" class="link-trigger">{{ aInfo }}</a>
 
     <div v-if="open" class="overlay" @click.self="close">
       <div class="modal">
@@ -33,7 +33,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, watch } from 'vue'
+import {ref, computed, watch} from 'vue'
 
 const props = defineProps<{
   file: string
@@ -178,5 +178,34 @@ button {
   padding: 0.4rem 1rem;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.link-trigger {
+  position: relative;
+  color: var(--vp-c-brand);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.link-trigger::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* 与文字距离 */
+  width: 100%;
+  height: 2px;
+  background-color: var(--vp-c-brand);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.link-trigger:hover {
+  color: var(--vp-c-brand);
+}
+
+.link-trigger:hover::after {
+  transform: scaleX(1);
 }
 </style>

@@ -14,63 +14,77 @@ const props = withDefaults(defineProps<Props>(), {
 })
 </script>
 
-
 <template>
   <div class="linkcard">
-    <a :href="props.url" target="_blank">
-      <p class="description">{{ props.title }}<br><span>{{ props.description }}</span></p>
+    <a :href="props.url" target="_blank" rel="noopener noreferrer">
       <div class="logo" v-if="props.logo">
-        <img alt="logo" width="70px" height="70px" :src="props.logo" />
+        <img :src="props.logo" alt="logo"/>
       </div>
+      <p class="description">
+        {{ props.title }}
+        <span>{{ props.description }}</span>
+      </p>
     </a>
   </div>
 </template>
 
-<style>
-/* 卡片背景 */
+<style scoped>
 .linkcard {
   background-color: var(--vp-c-bg-soft);
-  border-radius: 8px;
-  padding: 8px 16px 8px 8px;
-  transition: color 0.5s, background-color 0.5s;
-  margin-top: 15px;
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin-top: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* 卡片鼠标悬停 */
 .linkcard:hover {
   background-color: var(--vp-c-yellow-soft);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* 链接样式 */
 .linkcard a {
   display: flex;
   align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
 }
 
-/* 描述链接文字 */
+.linkcard .logo img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
 .linkcard .description {
   flex: 1;
-  font-weight: 500;
+  margin: 0;
   font-size: 16px;
-  line-height: 25px;
+  font-weight: 600;
   color: var(--vp-c-text-1);
-  margin: 0 0 0 16px;
-  transition: color 0.5s;
+  line-height: 1.5;
 }
 
-/* 描述链接文字2 */
 .linkcard .description span {
+  display: block;
+  margin-top: 4px;
   font-size: 14px;
+  color: var(--vp-c-text-2);
+  font-weight: 400;
 }
 
-/* logo图片 */
-.linkcard .logo img {
-  width: 80px;
-  object-fit: contain;
-}
+@media (max-width: 600px) {
+  .linkcard a {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-/* 链接下划线去除 */
-.vp-doc a {
-  text-decoration: none;
+  .linkcard .logo img {
+    width: 48px;
+    height: 48px;
+    margin-top: 8px;
+  }
 }
 </style>

@@ -3,7 +3,9 @@
 ### ollama安装
 <Linkcard url="https://ollama.com/" title="官方地址" description="https://ollama.com/"/>
 
-### 本地部署大模型
+### 部署大模型
+
+#### 方式一：ollama官方支持的模型
 
 本文以 `codegeex4` 模型为例，接口参数遵循 `openai` 规范
 
@@ -11,6 +13,27 @@
 # 运行 codegeex4 模型，首次运行会下载模型文件
 ollama run codegeex4
 ```
+
+#### 方式二：加载本地 GGUF 模型文件
+
+**下载`GGUF`模型文件**
+
+<Linkcard url="https://huggingface.co/" title="Hugging Face" description="https://huggingface.co/"/>
+<Linkcard url="https://www.modelscope.cn/home" title="ModelScope 魔塔社区" description="https://www.modelscope.cn/home"/>
+
+**编写ModelFIle**
+
+```shell
+# gguf模型文件地址
+FROM ./codegeex4-all-9b-IQ3_M.gguf
+
+TEMPLATE """<|user|>
+{{ .Prompt }}<|assistant|>
+"""
+
+SYSTEM ""
+```
+
 
 ### 检查是否启动成功
 
