@@ -117,6 +117,7 @@ export default defineConfig({
                 items: [
                     {text: 'Ollama', link: '/model/ollama'},
                     {text: '相关服务', link: '/model/server'},
+                    {text: '本地大模型调用', link: '/model/quickstart'},
                 ]
             },
             {
