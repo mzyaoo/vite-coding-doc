@@ -14,3 +14,13 @@ superUsers：root  默认是root
 
 milvus客户端：https://localhost:9091
 minio客户端：https://localhost:9001
+
+
+
+
+docker info | grep "Docker Root Dir"
+
+
+zsh 配置
+
+https://sysin.org/blog/linux-zsh/

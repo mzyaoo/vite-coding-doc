@@ -36,6 +36,10 @@ code <文件夹/文件>
 
 <Linkcard url="https://ohmyz.sh/" title="官方地址" description="https://ohmyz.sh/"/>
 
+#### 主题样式
+
+<Linkcard url="https://github.com/ohmyzsh/ohmyzsh/wiki/themes" title="oh-my-zsh 官方主题样式" description="https://github.com/ohmyzsh/ohmyzsh/wiki/themes"/>
+
 #### 配色方案
 
 <Linkcard url="https://github.com/mbadolato/iTerm2-Color-Schemes" title="参考仓库" description="https://github.com/mbadolato/iTerm2-Color-Schemes"/>
@@ -65,6 +69,24 @@ cd fonts
 # 执行安装命令，安装完成后就可以删除
 ./install.sh
 ```
+
+#### 插件
+
+**zsh-syntax-highlighting**
+
+<Linkcard url="https://github.com/zsh-users/zsh-syntax-highlighting" title="高亮插件仓库" description="https://github.com/zsh-users/zsh-syntax-highlighting"/>
+
+**zsh-completions**
+
+<Linkcard url="https://github.com/zsh-users/zsh-completions" title="补全插件仓库" description="https://github.com/zsh-users/zsh-completions"/>
+
+**zsh-autosuggestions**
+
+<Linkcard url="https://github.com/zsh-users/zsh-autosuggestions" title="历史命令补全插件仓库" description="https://github.com/zsh-users/zsh-autosuggestions"/>
+
+**Incremental completion on zsh**
+
+<Linkcard url="https://mimosa-pudica.net/zsh-incremental.html" title="实时命令提示插件" description="https://mimosa-pudica.net/zsh-incremental.html"/>
 
 #### 使用iTerm2连接远端服务器
 
