@@ -1,5 +1,43 @@
 # Mac应用分享
 
+### HomeBrew
+
+**安装**
+<Linkcard url="https://brew.sh/" title="官方" description="https://brew.sh/"/>
+
+> [!TIP]
+> 以上方式可能会安装失败，国内用户可参考 -> https://gitee.com/cunkai/HomebrewCN
+
+#### 端口转发 `socat`
+
+**安装命令**
+```shell
+brew install socat
+```
+
+**确认是否安装成功**
+
+```shell
+socat -h
+```
+
+**启动转发服务**
+```shell
+socat TCP-LISTEN:8080,fork TCP:127.0.0.1:9090
+
+# 后台运行 
+nohup socat TCP-LISTEN:8080,fork TCP:127.0.0.1:9090
+```
+
+**停止端口转发**
+```shell
+# 查看对应pid，杀死进程
+ps aux | grep socat
+
+# 杀死进程
+kill -9 <pid>
+```
+
 ### SublimeText
 
 **配置终端快速打开文件夹、文件**

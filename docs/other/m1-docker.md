@@ -361,7 +361,7 @@ docker pull zilliz/attu:latest
 
 docker run -d -p 3000:3000 \
 --name attu \
---network codegeex-net \
+--network docker-net \
 -e MILVUS_URL=localhost:19530 \
 zilliz/attu:latest
 ```
