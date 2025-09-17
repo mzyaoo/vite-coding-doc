@@ -3,7 +3,7 @@
 > [!TIP]
 > 版本要求：Docker Engine or Docker Desktop (Windows) 4.41+ or Docker Desktop (MacOS) 4.40+
 
-<Linkcard url="https://docs.docker.com/ai/model-runner/#how-do-i-interact-through-the-openai-api" title="官方文档" description="https://docs.docker.com/ai/model-runner/#how-do-i-interact-through-the-openai-api"/>
+<LinkCard url="https://docs.docker.com/ai/model-runner/#how-do-i-interact-through-the-openai-api" title="官方文档" description="https://docs.docker.com/ai/model-runner/#how-do-i-interact-through-the-openai-api"/>
 
 ## 此文档以`Qwen3`为例
 

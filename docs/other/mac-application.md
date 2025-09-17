@@ -3,7 +3,7 @@
 ### HomeBrew
 
 **安装**
-<Linkcard url="https://brew.sh/" title="官方" description="https://brew.sh/"/>
+<LinkCard url="https://brew.sh/" title="官方" description="https://brew.sh/"/>
 
 > [!TIP]
 > 以上方式可能会安装失败，国内用户可参考 -> https://gitee.com/cunkai/HomebrewCN
@@ -72,15 +72,15 @@ code <文件夹/文件>
 
 #### oh-my-zsh 配置
 
-<Linkcard url="https://ohmyz.sh/" title="官方地址" description="https://ohmyz.sh/"/>
+<LinkCard url="https://ohmyz.sh/" title="官方地址" description="https://ohmyz.sh/"/>
 
 #### 主题样式
 
-<Linkcard url="https://github.com/ohmyzsh/ohmyzsh/wiki/themes" title="oh-my-zsh 官方主题样式" description="https://github.com/ohmyzsh/ohmyzsh/wiki/themes"/>
+<LinkCard url="https://github.com/ohmyzsh/ohmyzsh/wiki/themes" title="oh-my-zsh 官方主题样式" description="https://github.com/ohmyzsh/ohmyzsh/wiki/themes"/>
 
 #### 配色方案
 
-<Linkcard url="https://github.com/mbadolato/iTerm2-Color-Schemes" title="参考仓库" description="https://github.com/mbadolato/iTerm2-Color-Schemes"/>
+<LinkCard url="https://github.com/mbadolato/iTerm2-Color-Schemes" title="参考仓库" description="https://github.com/mbadolato/iTerm2-Color-Schemes"/>
 
 ```shell
 # 配色文件目录
@@ -95,7 +95,7 @@ https://iterm2colorschemes.com/
 
 #### 字体配置
 
-<Linkcard url="https://github.com/powerline/fonts" title="参考仓库" description="https://github.com/powerline/fonts"/>
+<LinkCard url="https://github.com/powerline/fonts" title="参考仓库" description="https://github.com/powerline/fonts"/>
 
 ```shell
 # Git下载仓库，也可以访问仓库下载zip，本文使用 git 的方式下
@@ -112,19 +112,19 @@ cd fonts
 
 **zsh-syntax-highlighting**
 
-<Linkcard url="https://github.com/zsh-users/zsh-syntax-highlighting" title="高亮插件仓库" description="https://github.com/zsh-users/zsh-syntax-highlighting"/>
+<LinkCard url="https://github.com/zsh-users/zsh-syntax-highlighting" title="高亮插件仓库" description="https://github.com/zsh-users/zsh-syntax-highlighting"/>
 
 **zsh-completions**
 
-<Linkcard url="https://github.com/zsh-users/zsh-completions" title="补全插件仓库" description="https://github.com/zsh-users/zsh-completions"/>
+<LinkCard url="https://github.com/zsh-users/zsh-completions" title="补全插件仓库" description="https://github.com/zsh-users/zsh-completions"/>
 
 **zsh-autosuggestions**
 
-<Linkcard url="https://github.com/zsh-users/zsh-autosuggestions" title="历史命令补全插件仓库" description="https://github.com/zsh-users/zsh-autosuggestions"/>
+<LinkCard url="https://github.com/zsh-users/zsh-autosuggestions" title="历史命令补全插件仓库" description="https://github.com/zsh-users/zsh-autosuggestions"/>
 
 **Incremental completion on zsh**
 
-<Linkcard url="https://mimosa-pudica.net/zsh-incremental.html" title="实时命令提示插件" description="https://mimosa-pudica.net/zsh-incremental.html"/>
+<LinkCard url="https://mimosa-pudica.net/zsh-incremental.html" title="实时命令提示插件" description="https://mimosa-pudica.net/zsh-incremental.html"/>
 
 #### 使用iTerm2连接远端服务器
 
@@ -151,4 +151,4 @@ interact
 </p>
 
 ### ClashX
-<Linkcard url="https://bucd.me/#/register?code=49v7nXMT" title="Bucd" description="推荐梯子"/>
+<LinkCard url="https://bucd.me/#/register?code=49v7nXMT" title="Bucd" description="推荐梯子"/>

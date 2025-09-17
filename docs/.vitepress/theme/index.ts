@@ -15,7 +15,7 @@ import Backtotop from "./components/Backtotop.vue";
 import MouseFollower from "./components/MouseFollower.vue"
 import DocLayout from "./components/layout/DocLayout.vue";
 import HomePage from "./components/HomePage.vue";
-import Linkcard from "./components/Linkcard.vue"
+import LinkCard from "./components/LinkCard.vue"
 import FileViewer from "./components/FileViewer.vue";
 
 
@@ -35,7 +35,7 @@ export default {
         app.component('ArticleMetadata', ArticleMetadata)
         app.component('MouseFollower', MouseFollower)
         app.component('HomePage', HomePage)
-        app.component('Linkcard', Linkcard)
+        app.component('LinkCard', LinkCard)
         app.component('FileViewer', FileViewer)
         // 彩虹背景动画样式
         if (typeof window !== 'undefined') {

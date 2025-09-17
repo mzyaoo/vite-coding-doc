@@ -2,7 +2,7 @@
 
 ### milvus
 
-<Linkcard url="https://github.com/milvus-io/milvus"
+<LinkCard url="https://github.com/milvus-io/milvus"
 title="官方仓库"
 description="https://github.com/milvus-io/milvus"
 />

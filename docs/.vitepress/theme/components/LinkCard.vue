@@ -1,24 +1,37 @@
 <script setup lang="ts">
+import {computed} from 'vue'
+
 interface Props {
   url: string
   title: string
   description: string
-  logo: string
 }
 
 const props = withDefaults(defineProps<Props>(), {
   url: '',
   title: '',
   description: '',
-  logo: '',
+})
+
+// 根据 url 自动生成 favicon 地址
+const favicon = computed(() => {
+  try {
+    const domain = new URL(props.url).hostname
+    // Google 的 favicon API
+    return `https://www.google.com/s2/favicons?sz=64&domain=${domain}`
+    // 你也可以换成 DuckDuckGo：
+    // return `https://icons.duckduckgo.com/ip3/${domain}.ico`
+  } catch {
+    return ''
+  }
 })
 </script>
 
 <template>
   <div class="linkcard">
     <a :href="props.url" target="_blank" rel="noopener noreferrer" class="linkcard-link">
-      <div class="logo" v-if="props.logo">
-        <img :src="props.logo" alt="logo"/>
+      <div class="logo" v-if="favicon">
+        <img :src="favicon" alt="logo"/>
       </div>
       <div class="content">
         <p class="description">
@@ -26,7 +39,8 @@ const props = withDefaults(defineProps<Props>(), {
           <span>{{ props.description }}</span>
         </p>
         <div class="link-indicator">
-          <svg class="external-link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg class="external-link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
             <polyline points="15,3 21,3 21,9"></polyline>
             <line x1="10" y1="14" x2="21" y2="3"></line>

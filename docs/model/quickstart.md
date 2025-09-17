@@ -4,7 +4,7 @@
 
 ### 下载模型
 
-<Linkcard url="https://www.modelscope.cn/models/Qwen/Qwen3-4B" title="modelscope 模型下载地址" description="https://www.modelscope.cn/models/Qwen/Qwen3-4B"/>
+<LinkCard url="https://www.modelscope.cn/models/Qwen/Qwen3-4B" title="modelscope 模型下载地址" description="https://www.modelscope.cn/models/Qwen/Qwen3-4B"/>
 
 
 ### 运行案例

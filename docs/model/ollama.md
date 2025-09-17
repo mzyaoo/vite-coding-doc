@@ -1,7 +1,7 @@
 # ollama
 
 ### ollama安装
-<Linkcard url="https://ollama.com/" title="官方地址" description="https://ollama.com/"/>
+<LinkCard url="https://ollama.com/" title="官方地址" description="https://ollama.com/"/>
 
 ### 部署大模型
 
@@ -18,8 +18,8 @@ ollama run codegeex4
 
 **下载`GGUF`模型文件**
 
-<Linkcard url="https://huggingface.co/" title="Hugging Face" description="https://huggingface.co/"/>
-<Linkcard url="https://www.modelscope.cn/home" title="ModelScope 魔塔社区" description="https://www.modelscope.cn/home"/>
+<LinkCard url="https://huggingface.co/" title="Hugging Face" description="https://huggingface.co/"/>
+<LinkCard url="https://www.modelscope.cn/home" title="ModelScope 魔塔社区" description="https://www.modelscope.cn/home"/>
 
 **编写ModelFIle**
 
